@@ -1,6 +1,6 @@
 .mainNav {
     background-color: #fff;
-    box-shadow: 0px 0px 4px 4px #00000010;
+    /* box-shadow: 0px 0px 4px 4px #00000010; */
     padding: 10px 0px;
 }
 
@@ -13,6 +13,7 @@
     border-radius: 30px;
     padding: 5px 5px 5px 20px;
 }
+
 .input {
     width: 100%;
     outline: none;
@@ -30,4 +31,56 @@
     font-weight: 700;
     display: flex;
     align-items: center;
+}
+
+.loginBtn {
+    /* padding-inline: 15px; */
+    border-radius: 10px;
+    border: 1px solid #64bc6e;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.loginBtn span {
+    color: #64bc6e;
+    font-weight: 700;
+    padding-inline: 5px;
+}
+
+.loginBtn i {
+    color: #64bc6e;
+    font-size: 20px;
+    padding-inline: 3px;
+}
+
+.badge {
+    position: absolute;
+    background-color: #64bc6e;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 50%;
+    padding-inline: 2px;
+    top: 0;
+    left: 12px;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    padding-top: 15px;
+}
+
+.menu li {
+    padding-inline: 13px;
+}
+
+@media screen and (max-width:577px) {
+    .menu {
+        display: none;
+    }
 }
