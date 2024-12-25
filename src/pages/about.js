@@ -2,7 +2,9 @@ import React from 'react'
 
 const about = () => {
   return (
-    <div>about</div>
+    <div>
+      <button className='btn btn-secondary'>Click me</button>
+    </div>
   )
 }
 

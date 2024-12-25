@@ -3,8 +3,9 @@ import "@/styles/globals.css";
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import { useEffect } from "react";
+import { wrapper } from "@/redux/store";
 
-export default function App({ Component, pageProps }) {
+const App = ({ Component, pageProps }) => {
 
   useEffect(() => {
     import("bootstrap/dist/js/bootstrap");
@@ -14,3 +15,5 @@ export default function App({ Component, pageProps }) {
     <Component {...pageProps} />
   </ClientLayout>
 }
+
+export default wrapper.withRedux(App);

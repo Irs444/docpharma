@@ -4,8 +4,8 @@ import React from 'react'
 const Home = () => {
   return (
     <div>
-      <Head title="Home"/>
-
+      {/* <Head title="Home" /> */}
+     <p>s,mxcnlvkmv;xl;</p>
     </div>
   )
 }
